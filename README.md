@@ -1,9 +1,9 @@
-# site Name- 
-   Sofiuzzaman Sofi Portfolio Website
+site Name- 
+# Sofiuzzaman Sofi Portfolio Website
 
 
 
-Project Live site link [Create React App](https://sofiuzzamansofi.netlify.app).
+Project Live site link [Sofiuzzaman Sofi](https://sofiuzzamansofi.netlify.app).
 
 ## Available Scripts
 
