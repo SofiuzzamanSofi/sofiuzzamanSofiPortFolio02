@@ -6,14 +6,19 @@
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  /* width: 100%; */
+  /* for footer in under ----  */
+  min-height: 100vh;
+  /* footer height --------- */
+  padding-bottom: 188px;
+  position: relative;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@media screen and (max-height: 767px) {
+  body {
+    /* footer height --------- */
+    padding-bottom: 278px;
+  }
 }
+
+/* বিশেষ দ্রষ্টব্য: এখানে ফুটারের মাপ(উচচতা/height) কে body এর padding হিসাবে বাদ দেওয়া হয়েছে এবং body তে relative এবং footer এ absolute ব্যাবহার করা হয়েছে ------  */

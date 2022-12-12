@@ -5,10 +5,14 @@ import { Outlet } from "react-router-dom";
 
 const MainLayout = () => {
     return (
-        <div>
-            <Header />
-            <Outlet />
-            <Footer />
+        <div className=''>
+            <div className='max-w-screen-2xl mx-auto bg-slate-100 text-black dark:bg-black dark:text-white'>
+                <Header />
+                <div className='px-7'>
+                    <Outlet />
+                </div>
+                <Footer />
+            </div>
         </div>
     );
 };
