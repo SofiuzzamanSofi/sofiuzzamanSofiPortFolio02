@@ -4,8 +4,8 @@ import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import { FaTimes } from "react-icons/fa";
 import { useState } from "react";
 import { useEffect } from "react";
-import cv from "../assets/MD SOFIUZZAMAN with portfolio.pdf";
-
+import cv from "../assets/resume.pdf";
+import sofiLogo from "../assets/sofiLogo.png";
 
 
 
@@ -28,11 +28,11 @@ const Header = () => {
 
 
     return (
-        <header className="py-5 px-7">
-            <div className="container flex items-center justify-between">
+        <header className=" bg-slate-50 text-black dark:bg-black dark:text-white">
+            <div className="px-7 py-2 container flex items-center justify-between max-w-screen-2xl mx-auto border dark:border-gray-800">
                 <div className="logo">
                     <Link to="/" className=" text-xl ">
-                        <img src="/images/logo.png" alt="Logo" className="w-full" />
+                        <img src={sofiLogo} alt="Logo" className="border-primary border-2 bg-primary hover:bg-blue-800  px-6 py-[2px] w-40 md:w-64 rounded-md " />
                     </Link>
                 </div>
                 <nav className=" hidden text-sm lg:flex items-center justify-between gap-5">
@@ -40,13 +40,11 @@ const Header = () => {
                     <a href={location.pathname !== "/" ? "/" : "#contact"}>Contact Me</a>
                     <a href={location.pathname !== "/" ? "/" : "#projects"}>Projects</a>
                     <Link to="/blogs">My Blogs</Link>
-                    <a
-                        href={cv}
-                        download
+                    <Link to={cv} target="_blank" download
                         className="py-4 px-9 rounded-md border-[3px] border-primary hover:bg-primary hover:text-white"
                     >
                         Resume
-                    </a>
+                    </Link>
                 </nav>
                 <button className="lg:hidden" onClick={() => setShowNav(!showNav)}>
                     <HiOutlineMenuAlt3 size={28} />
@@ -65,13 +63,12 @@ const Header = () => {
                     <a href={location.pathname !== "/" ? "/" : "#contact"}>Contact Me</a>
                     <a href={location.pathname !== "/" ? "/" : "#projects"}>Projects</a>
                     <Link to="/blogs">My Blogs</Link>
-                    <a
-                        href={cv}
-                        download
+                    <Link
+                        to={cv} target="_blank" download
                         className="bg-red-600 py-2  px-3 rounded"
                     >
                         Resume
-                    </a>
+                    </Link>
                 </nav>
             </div>
         </header>

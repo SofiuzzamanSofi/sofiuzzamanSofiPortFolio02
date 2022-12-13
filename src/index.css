@@ -3,22 +3,30 @@
 @tailwind components;
 @tailwind utilities;
 
+html,
+#root {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
 
 body {
-  margin: 0;
-  /* width: 100%; */
-  /* for footer in under ----  */
-  min-height: 100vh;
-  /* footer height --------- */
-  padding-bottom: 188px;
   position: relative;
+  margin: 0;
+  min-height: 100%;
+  box-sizing: inherit;
+  padding-bottom: 157px;
 }
 
-@media screen and (max-height: 767px) {
+@media screen and (max-width: 767px) {
   body {
     /* footer height --------- */
-    padding-bottom: 278px;
+    padding-bottom: 256px;
   }
 }
+
 
 /* বিশেষ দ্রষ্টব্য: এখানে ফুটারের মাপ(উচচতা/height) কে body এর padding হিসাবে বাদ দেওয়া হয়েছে এবং body তে relative এবং footer এ absolute ব্যাবহার করা হয়েছে ------  */

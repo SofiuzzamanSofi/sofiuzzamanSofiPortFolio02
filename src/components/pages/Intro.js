@@ -1,32 +1,31 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import coddingLogo from "../assets/coddingLogo.gif";
-import cv from "../assets/MD SOFIUZZAMAN with portfolio.pdf";
+import cv from "../assets/resume.pdf";
+import jsPDF from "jspdf";
 
 
 const Intro = () => {
+
+
     return (
-        <section className="flex flex-col-reverse md:flex-row md justify-between gap-5">
+        <section className="flex flex-col-reverse md:flex-row md justify-between gap-5 py-10">
             <div className="flex items-center">
                 <div className="grid gap-4 font-bold">
                     <p className="text-2xl md:text-4xl">Hello</p>
                     <p className="text-5xl md:text-7xl">I AM Sofiuzzaman Sofi</p>
-                    <p className="md:text-2xl border">Front-end || MERN-Stack || Full-Stack Web Developer</p>
+                    <p className="md:text-2xl">Front-end || MERN-Stack || Full-Stack Web Developer</p>
                     <div className="flex gap-6">
-                        <a
-                            href="./files/MD ARIFUL ISLAM RESUME REACT.pdf"
-                            download
+                        <Link to=""
                             className="py-4 px-4 md:px-9 rounded-md border-[3px] border-primary bg-primary text-white  hover:bg-white hover:text-black"
                         >
                             Hire me
-                        </a>
-                        <a
-                            href="../assets/MD SOFIUZZAMAN with portfolio.pdf"
-                            // href={cv}
-                            download
+                        </Link>
+                        <Link to={cv} target="_blank" download
                             className="py-4 px-4 md:px-9 rounded-md border-[3px] border-primary hover:bg-primary hover:text-white"
                         >
                             Get Resume
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>
