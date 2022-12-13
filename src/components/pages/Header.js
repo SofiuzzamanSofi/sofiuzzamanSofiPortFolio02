@@ -31,7 +31,8 @@ const Header = () => {
                     </Link>
                 </div>
                 <nav className=" hidden text-sm lg:flex items-center justify-between gap-5">
-                    <Link to="/about">About Me</Link>
+                    {/* <Link to="/about">About Me</Link> */}
+                    <a href={location.pathname !== "/" ? "/" : "#aboutMe"}>About Me</a>
                     <a href={location.pathname !== "/" ? "/" : "#contact"}>Contact Me</a>
                     <a href={location.pathname !== "/" ? "/" : "#projects"}>Projects</a>
                     <Link to="/blogs">My Blogs</Link>
@@ -54,7 +55,8 @@ const Header = () => {
                     >
                         <FaTimes size="32" />
                     </button>
-                    <Link to="/about">About Me</Link>
+                    {/* <Link to="/about">About Me</Link> */}
+                    <a href={location.pathname !== "/" ? "/" : "#aboutMe"}>About Me</a>
                     <a href={location.pathname !== "/" ? "/" : "#contact"}>Contact Me</a>
                     <a href={location.pathname !== "/" ? "/" : "#projects"}>Projects</a>
                     <Link to="/blogs">My Blogs</Link>

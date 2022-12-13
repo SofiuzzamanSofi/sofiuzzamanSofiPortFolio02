@@ -33,7 +33,7 @@ const ContactMe = () => {
 
 
     return (
-        <div className="py-10">
+        <div className="py-10" id="contact">
             <div className="flex flex-col md:flex-row md justify-between gap-5">
                 <div className='w-full'>
                     <div className="text-center lg:text-left grid gap-5">
@@ -70,13 +70,13 @@ const ContactMe = () => {
                             <label className="label">
                                 <span className="label-text">Message</span>
                             </label>
-                            <textarea name="message" required id="" cols="30" rows="10" className="input h-28"
+                            <textarea name="message" required id="" cols="30" rows="10" className="input h-28" placeholder="describe your feedback/message"
                                 {...register("message", { required: true, maxLength: 20 })}
                             />
                             <p className='text-red-800'>{errors?.message ? "Feedback/Message at least 20 character" : ""}</p>
                         </div>
                         <div className="form-control mt-6">
-                            <input type="submit" value="Submit" className="input input-bordered bg-primary cursor-pointer" />
+                            <input type="submit" value="Submit" className="input input-bordered bg-primary text-white cursor-pointer" />
                         </div>
                     </form>
                 </div>
