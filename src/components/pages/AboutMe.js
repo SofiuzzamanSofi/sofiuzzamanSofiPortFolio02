@@ -32,9 +32,7 @@ const AboutMe = () => {
                             </p>
 
                             <p className="mb-2">
-                                I have a lot of interest in Saas products and Blockchain
-                                Development. I want to work on this field, if I get an
-                                opportunity.
+                                I have a lot of interest in New Things. I Think Life is valueless if there is no new things. Thats why I love to take new challenges everyday. I follow "never give up" slogan on handling errors or problems.
                             </p>
                         </div>
                         <div>

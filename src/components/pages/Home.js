@@ -2,7 +2,7 @@ import React from 'react';
 import AboutMe from './AboutMe';
 import ContactMe from './ContactMe';
 import Intro from './Intro';
-import Service from './Service';
+import Projects from './Projects';
 import Skills from './Skills';
 
 const Home = () => {
@@ -10,7 +10,7 @@ const Home = () => {
         <div className=''>
             <Intro />
             <Skills />
-            <Service />
+            <Projects />
             <AboutMe />
             <ContactMe />
         </div>

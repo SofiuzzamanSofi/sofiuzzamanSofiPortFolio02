@@ -40,7 +40,7 @@ const Skills = () => {
                     </div>
                     <div className="lg:col-span-1 w-full">
                         <div>
-                            <h3 className="uppercase font-bold text-2xl">Skills</h3>
+                            <h3 className="uppercase font-bold text-2xl">Skills  <span className='text-primary'>...</span></h3>
                             <div className="flex flex-wrap items-center gap-3 my-3">
                                 {skills.map((item, index) => (
                                     <button
