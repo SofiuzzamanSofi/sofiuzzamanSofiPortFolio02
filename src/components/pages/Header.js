@@ -9,11 +9,6 @@ import sofiLogo from "../assets/sofiLogo.png";
 
 
 
-
-
-
-
-
 const Header = () => {
     const [showNav, setShowNav] = useState(false);
     const location = useLocation();

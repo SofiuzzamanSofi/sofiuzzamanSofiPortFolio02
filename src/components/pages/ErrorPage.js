@@ -4,7 +4,7 @@ import errorPage from '../assets/errorPage.png';
 
 const ErrorPage = () => {
     return (
-        <div className='flex items-center justify-center min-h-screen mb-[-256px] md:mb-[-157px] bg-slate-50 text-black dark:bg-black dark:text-white'>
+        <div className='flex items-center justify-center min-h-screen mt-[-63px] md:mt-[-96px] mb-[-261px] md:mb-[-201px] bg-slate-50 text-black dark:bg-black dark:text-white'>
             <section className="container flex flex-col items-center justify-center p-5">
                 <div className="max-w-md text-center">
                     <div>
