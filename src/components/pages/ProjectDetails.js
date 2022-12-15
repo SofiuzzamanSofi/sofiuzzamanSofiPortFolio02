@@ -11,7 +11,7 @@ const ProjectDetails = () => {
     return (
         <section>
             <div className="container">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-5">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
                     <div className="lg:col-span-1 w-full">
                         <div autoPlay={true} infiniteLoop={true} className="">
                             <div>

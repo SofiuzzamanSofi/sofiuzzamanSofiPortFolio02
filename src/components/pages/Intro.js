@@ -16,11 +16,11 @@ const Intro = () => {
                     <p className="text-5xl md:text-7xl">I AM Sofiuzzaman Sofi</p>
                     <p className="md:text-2xl">Front-end || MERN-Stack || Full-Stack Web Developer</p>
                     <div className="flex gap-6">
-                        <Link to=""
+                        <a href="#contact"
                             className="py-4 px-4 md:px-9 rounded-md border-[3px] border-primary bg-primary text-white  hover:bg-white hover:text-black"
                         >
                             Hire me
-                        </Link>
+                        </a>
                         <Link to={cv} target="_blank" download
                             className="py-4 px-4 md:px-9 rounded-md border-[3px] border-primary hover:bg-primary hover:text-white"
                         >
