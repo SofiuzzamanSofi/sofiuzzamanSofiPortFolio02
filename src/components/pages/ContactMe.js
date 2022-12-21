@@ -6,7 +6,7 @@ import emailjs from '@emailjs/browser';
 const ContactMe = () => {
 
     const form = useRef();
-    const [loading, setLoading] = useState();
+    const [loading, setLoading] = useState(false);
     // const handleSubmit = () => {
     //     toast.success("kam ok")
     //     toast.error("kam hoi nai")
@@ -20,14 +20,18 @@ const ContactMe = () => {
 
     const sendEmail = (e) => {
         e.preventDefault();
+        setLoading(true);
         console.log(process.env.REACT_APP_SERVICE_ID);
         emailjs.sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, form.current, process.env.REACT_APP_PUBLIC_KEY)
             .then((result) => {
                 console.log(result.text);
-                toast.success(`Dear ${e.target?.name.value}, Your Valuable Feedback/Message is Submitted.`)
+                toast.success(`Dear ${e.target?.name.value}, Your Valuable Feedback/Message is Submitted.`);
+                e.target.reset();
+                setLoading(false);
             }, (error) => {
                 console.log(error.text);
                 toast.error(`Dear ${e.target?.name.value}, Something error.`)
+                setLoading(false);
             });
     };
 
@@ -70,13 +74,13 @@ const ContactMe = () => {
                             <label className="label">
                                 <span className="label-text">Message</span>
                             </label>
-                            <textarea name="message" required id="" cols="30" rows="10" className="input h-28" placeholder="describe your feedback/message"
+                            <textarea name="message" required id="" cols="30" rows="10" className="input input-bordered h-28 py-2" placeholder="describe your feedback/message"
                                 {...register("message", { required: true, maxLength: 20 })}
                             />
                             <p className='text-red-800'>{errors?.message ? "Feedback/Message at least 20 character" : ""}</p>
                         </div>
                         <div className="form-control mt-6">
-                            <input type="submit" value="Submit" className="input input-bordered text-white cursor-pointer bg-primary hover:bg-[#4800ff]" />
+                            <input type="submit" value={`${loading ? "Loading..." : "Submit"}`} className="input input-bordered text-white cursor-pointer bg-primary hover:bg-[#4800ff]" />
                         </div>
                     </form>
                 </div>
