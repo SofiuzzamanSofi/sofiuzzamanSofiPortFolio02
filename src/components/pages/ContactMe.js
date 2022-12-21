@@ -13,10 +13,10 @@ const ContactMe = () => {
     // }
 
     const { register, handleSubmit, watch, formState: { errors } } = useForm();
-    const onSubmit = data => {
-        // console.log(data);
-        // console.log(errors);
-    }
+    // const onSubmit = data => {
+    // console.log(data);
+    // console.log(errors);
+    // }
 
     const sendEmail = (e) => {
         e.preventDefault();

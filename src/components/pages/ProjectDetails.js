@@ -7,7 +7,6 @@ import { useLocation } from "react-router-dom";
 
 const ProjectDetails = () => {
     const { state } = useLocation();
-    // console.log(state);
 
 
     return (
