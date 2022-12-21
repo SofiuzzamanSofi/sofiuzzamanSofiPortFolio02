@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import coddingLogo from "../assets/coddingLogo.gif";
-import cv from "../assets/resume.pdf";
+import cv from "../assets/MD-SOFIUZZAMAN-resume.pdf";
 import jsPDF from "jspdf";
 
 
@@ -17,7 +17,7 @@ const Intro = () => {
                     <p className="md:text-2xl">Front-end || MERN-Stack || Full-Stack Web Developer</p>
                     <div className="flex gap-6">
                         <a href="#contact"
-                            className="py-4 px-4 md:px-9 rounded-md border-[3px] border-primary bg-primary text-white  hover:bg-white hover:text-black"
+                            className="py-4 px-4 md:px-9 rounded-md border-[3px] border-primary bg-primary text-white hover:bg-white hover:text-black"
                         >
                             Hire me
                         </a>

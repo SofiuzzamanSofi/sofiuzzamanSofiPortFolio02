@@ -1,141 +1,182 @@
+import machinary1 from "../assets/projectsPic/machinari-sells/machinary-1.JPG"
+import machinary2 from "../assets/projectsPic/machinari-sells/Machineries-Sells (1).png"
+import sofiVisa1 from "../assets/projectsPic/sofi-visa-hub/Sofi-Visa-Hub-1.JPG"
+import sofiVisa2 from "../assets/projectsPic/sofi-visa-hub/Sofi-Visa-Hub.png"
+import programmers1 from "../assets/projectsPic/programmers-home/programmers-home-1.JPG"
+import programmers2 from "../assets/projectsPic/programmers-home/programmers-home.png"
+import bdNews1 from "../assets/projectsPic/bd-news/bd-newx-1.JPG"
+import bdNews2 from "../assets/projectsPic/bd-news/bd-newx-2.png"
+
+
 
 const projects = [
     {
         id: 1,
-        title: "Rolex",
+        title: "Machineries-sells",
         description:
-            "Rolex is a ecommerce website. It sells various kinds of rolex brand watches. User can purchase their favourite watch with Stripe payment gateway.",
+            "Machineries-sells is a E-commerce website. It sells various kinds of Machineries. User can buy Machineries and Sellers can sells their machines.",
         features: [
             { id: 1, name: "CRUD Operation" },
             { id: 2, name: "Search and Filter functionality" },
             { id: 3, name: "NodeJS authentication with JWT" },
-            { id: 4, name: "User and Admin Dashboard" },
-            { id: 5, name: "Stripe Payment Geteway" },
+            { id: 4, name: "User  Dashboard" },
+            { id: 5, name: "SellersDashboard" },
+            { id: 6, name: "Admin Dashboard" },
+            { id: 7, name: "Stripe Payment Getaway" },
         ],
-        live: "https://rolex-ec266.web.app",
-        code: "https://github.com/Arifulislam5577/rolex-shopping",
+        live: "https://machineries-sells.web.app",
+        clientSide: "https://github.com/SofiuzzamanSofi/machineries-sells-client.git",
+        serverSide: "https://github.com/SofiuzzamanSofi/machineries-sells-server.git",
         coverImage: [
-            "https://res.cloudinary.com/arif5577/image/upload/v1648128437/Shopping-cart/Untitled_design_k2szlu.png",
-            "https://res.cloudinary.com/arif5577/image/upload/v1670761638/Shopping-cart/1_xptvxx.png",
-            "https://res.cloudinary.com/arif5577/image/upload/v1670761637/Shopping-cart/2_brijxw.png",
+            machinary1
+        ],
+        detailsImage: [
+            machinary2
         ],
 
         usedTechnology: [
             "React Js",
             "React Router Dom",
-            "Bootstrap",
+            "Axios",
+            "React-TanStack-Query",
+            "React-Hook-form",
+            "Json web token",
+            "Tailwind CSS",
+            "DaisyUI",
             "Node Js",
             "Express Js",
+            "colors",
+            "cors",
+            "dotenv",
+            "stripe",
+            "Firebase",
             "MongoDB",
-            "Mongoose",
-            "Json web token",
         ],
-        projectType: "ecommerce app",
-        startTime: "February 10",
-        endTime: "February 27",
+        projectType: "E-commerce app",
+        startTime: "Nov 24",
+        endTime: "De 23",
         buildYear: "2022",
     },
     {
         id: 2,
-        title: "Newsman",
+        title: "Sofi-Visa-Hub",
         description:
-            "Rolex is a ecommerce website. It sells various kinds of rolex brand watches. User can purchase their favourite watch with Stripe payment gateway.",
+            "Sofi-Visa-Hub is a personal Visa-Agent site. Visa Agent's services packages prices and clients feedback is included and show by pagination in this website.",
         features: [
             { id: 1, name: "CRUD Operation" },
             { id: 2, name: "Search and Filter functionality" },
             { id: 3, name: "NodeJS authentication with JWT" },
-            { id: 4, name: "Admin Dashboard" },
+            { id: 4, name: "User Dashboard" },
+            { id: 4, name: "User Add services Dashboard" },
         ],
         usedTechnology: [
             "React Js",
             "React Router Dom",
+            "Json web token",
+            "React-photo-viwer",
             "Tailwind CSS",
+            "Flowbite",
             "Node Js",
             "Express Js",
+            "colors",
+            "cors",
+            "dotenv",
+            "Firebase",
             "MongoDB",
-            "Mongoose",
-            "Json web token",
         ],
-        live: "https://newsman-849a8.web.app",
-        code: "https://github.com/Arifulislam5577/newsman-blog-app",
+        live: "https://sofi-visa-hub.web.app",
+        clientSide: "https://github.com/SofiuzzamanSofi/Sofi-Visa-Hub.git",
+        serverSide: "https://github.com/SofiuzzamanSofi/Sofi-Visa-Hub-Server.git",
         coverImage: [
-            "https://res.cloudinary.com/arif5577/image/upload/v1648128436/Shopping-cart/Untitled_design_1_trund8.png",
-            "https://res.cloudinary.com/arif5577/image/upload/v1670766600/Shopping-cart/1_mshvh8.png",
-            "https://res.cloudinary.com/arif5577/image/upload/v1670768292/Shopping-cart/2_xi2mt8.png",
+            sofiVisa1
+        ],
+        detailsImage: [
+            sofiVisa2
         ],
 
-        projectType: "blog app",
-        startTime: "May 03",
-        endTime: "May 20",
+        projectType: "E-commerce",
+        startTime: "Nov 08",
+        endTime: "Dec 02",
         buildYear: "2022",
     },
     {
         id: 3,
-        title: "Travelin",
+        title: "Programmers-Home",
         description:
-            "Travelin is a travel service web app for bangladeshi people,which creator is Md Ariful Islam. It sells various kinds of tour packages. User can purchase their favourite tour package with Stripe payment gateway.",
+            "Programmers-Home Course Sells based. Here are display course based on many variant. User can show detail and download as pdfFormate.",
         features: [
             { id: 1, name: "CRUD Operation" },
             { id: 2, name: "Filter functionality" },
             { id: 3, name: "Firebase authentication with JWT" },
             { id: 4, name: "User Dashboard" },
-            { id: 5, name: "Stripe Payment Geteway" },
+            { id: 5, name: "React-Html-2-pdf-downloader" },
         ],
         usedTechnology: [
             "React Js",
             "React Router Dom",
+            "Json web token",
+            "jspdf",
+            "html2canvas",
             "Tailwind CSS",
-            "Firebase",
+            "DaisyUI",
             "Node Js",
             "Express Js",
+            "colors",
+            "cors",
+            "dotenv",
+            "Firebase",
             "MongoDB",
-            "Mongoose",
-            "Json web token",
         ],
-        live: "https://travelin-327a3.web.app",
-        code: "https://github.com/Arifulislam5577/travelin-cilent",
+        live: "https://programmers-home.web.app",
+        clientSide: "https://github.com/SofiuzzamanSofi/programmers-home.git",
+        serverSide: "https://github.com/SofiuzzamanSofi/programmers-home-server.git",
         coverImage: [
-            "https://res.cloudinary.com/arif5577/image/upload/v1670737852/Shopping-cart/travel_t4wmvn.png",
-            "https://res.cloudinary.com/arif5577/image/upload/v1670737852/Shopping-cart/travel_t4wmvn.png",
-            "https://res.cloudinary.com/arif5577/image/upload/v1670737852/Shopping-cart/travel_t4wmvn.png",
+            programmers1
+        ],
+        detailsImage: [
+            programmers2
         ],
 
-        projectType: "business app",
-        startTime: "November 08",
-        endTime: "November 20",
+        projectType: "Course-sell's-App",
+        startTime: "Oct 24",
+        endTime: "Oct 27",
         buildYear: "2022",
     },
     {
         id: 4,
-        title: "Nikeshoe",
+        title: "Bd-News",
         description:
-            "Nikeshoe is a small business website. It sell nike brand shoe with different packages. Anyone can purchase any package with stripe payment geteway.",
+            "Bd-News is a newspaper based website. User can read news by category and go dynamically category news by news category.",
         features: [
-            { id: 1, name: "CRUD Operation" },
-            { id: 2, name: "NodeJS authentication with JWT" },
-            { id: 3, name: "User and Admin Dashboard" },
-            { id: 4, name: "Stripe Payment Geteway" },
+            { id: 1, name: "Generated API by me(own)." },
+            { id: 2, name: "NodeJS authentication with email and password or google" },
+            { id: 3, name: "User login to see details news" },
+            { id: 4, name: "Go detail and back from details with category wise" },
         ],
-        live: "https://nikeshoe-a57fd.web.app",
-        code: "https://github.com/Arifulislam5577/NikeShoe",
+        live: "https://bd-news-clint.firebaseapp.com",
+        clientSide: "https://github.com/SofiuzzamanSofi/bd-news-client-side.git",
+        serverSide: "https://github.com/SofiuzzamanSofi/bd-news-server.git",
         coverImage: [
-            "https://res.cloudinary.com/arif5577/image/upload/v1648118173/Shopping-cart/Untitled_design_1_icpbiz.png",
-            "https://res.cloudinary.com/arif5577/image/upload/v1648118173/Shopping-cart/Untitled_design_1_icpbiz.png",
-            "https://res.cloudinary.com/arif5577/image/upload/v1648118173/Shopping-cart/Untitled_design_1_icpbiz.png",
+            bdNews1
         ],
+        detailsImage: [
+            bdNews2
+        ],
+
         usedTechnology: [
             "React Js",
             "React Router Dom",
-            "Tailwind CSS",
+            "Bootstrap CSS",
+            "React-bootstrap",
             "Node Js",
             "Express Js",
-            "MongoDB",
-            "Mongoose",
-            "Json web token",
+            "colors",
+            "cors",
+            "Firebase",
         ],
-        projectType: "business app",
-        startTime: "July 02",
-        endTime: "July 23",
+        projectType: "News paper app",
+        startTime: "Oct 19",
+        endTime: "Oct 28",
         buildYear: "2022",
     },
 ];

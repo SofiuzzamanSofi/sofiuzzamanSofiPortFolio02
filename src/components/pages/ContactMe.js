@@ -76,7 +76,7 @@ const ContactMe = () => {
                             <p className='text-red-800'>{errors?.message ? "Feedback/Message at least 20 character" : ""}</p>
                         </div>
                         <div className="form-control mt-6">
-                            <input type="submit" value="Submit" className="input input-bordered bg-primary text-white cursor-pointer" />
+                            <input type="submit" value="Submit" className="input input-bordered text-white cursor-pointer bg-primary hover:bg-[#4800ff]" />
                         </div>
                     </form>
                 </div>

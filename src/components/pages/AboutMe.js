@@ -16,6 +16,7 @@ const AboutMe = () => {
                                 <img
                                     src={sofi1}
                                     alt="arif"
+                                    // className="max-h-80 max-w-full rounded-full bg-primary hover:bg-white dark:hover:bg-black border-8 border-blue-600"
                                     className="max-h-80 max-w-full rounded-full bg-primary border-8 border-blue-600"
                                 />
                             </div>

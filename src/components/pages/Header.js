@@ -4,7 +4,7 @@ import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import { FaTimes } from "react-icons/fa";
 import { useState } from "react";
 import { useEffect } from "react";
-import cv from "../assets/resume.pdf";
+import cv from "../assets/MD-SOFIUZZAMAN-resume.pdf";
 import sofiLogo from "../assets/sofiLogo.png";
 
 
@@ -27,7 +27,7 @@ const Header = () => {
             <div className="px-7 py-2 container flex items-center justify-between max-w-screen-2xl mx-auto border dark:border-gray-800">
                 <div className="logo">
                     <Link to="/" className=" text-xl ">
-                        <img src={sofiLogo} alt="Logo" className="border-primary border-2 bg-primary hover:bg-blue-800  px-6 py-[2px] w-40 md:w-64 rounded-md " />
+                        <img src={sofiLogo} alt="Logo" className="border-primary border-2 bg-primary hover:bg-[#4800ff] px-6 py-[2px] w-40 md:w-64 rounded-md " />
                     </Link>
                 </div>
                 <nav className=" hidden text-sm lg:flex items-center justify-between gap-5">
