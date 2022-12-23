@@ -17,7 +17,8 @@ const Footer = () => {
                     <span className="footer-title">Social</span>
                     <div className="grid grid-flow-col gap-4">
 
-                        <a target="_blank" rel="noreferrer" href="https://mail.google.com/mail/u/0/#drafts?compose=DmwnWsdLRzWqgqNpggrKwzbMDgsNptHbkDMTMgzpNgMBsMjKqtDNdWbSDJLwFmlWnXlLCKDRVXDL" className='text-black'>
+                        {/* <a target="_blank" rel="noreferrer" href="https://mail.google.com/mail/u/0/#drafts?compose=DmwnWsdLRzWqgqNpggrKwzbMDgsNptHbkDMTMgzpNgMBsMjKqtDNdWbSDJLwFmlWnXlLCKDRVXDL"> */}
+                        <a target="_blank" rel="noreferrer" href="mailto:sofiuzzaman.sf@gmail.com">
                             <IoMdMail className='h-6 w-6' />
                         </a>
                         <a target="_blank" rel="noreferrer" href="https://www.facebook.com/sofiuzzaman.sofii">
