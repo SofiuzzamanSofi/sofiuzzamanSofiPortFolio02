@@ -1,6 +1,8 @@
 import React from "react";
 import { FaWhatsappSquare, FaFacebookSquare, FaYoutube, FaTwitterSquare, FaInstagramSquare, FaLinkedin, FaSnapchatSquare } from 'react-icons/fa';
+import { PhotoProvider, PhotoView } from "react-photo-view";
 import sofi1 from "../assets/sofi1.png";
+import sofi3 from "../assets/sofi3.jpg";
 
 
 
@@ -8,17 +10,21 @@ const AboutMe = () => {
 
     return (
         <section className="py-10" id='aboutMe'>
-            <div className="container">
+            <div >
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
                     <div className="lg:col-span-1 w-full">
                         <div className="">
-                            <div className="overflow-hidden flex justify-center items-center ">
-                                <img
-                                    src={sofi1}
-                                    alt="arif"
-                                    // className="max-h-80 max-w-full rounded-full bg-primary hover:bg-white dark:hover:bg-black border-8 border-blue-600"
-                                    className="max-h-80 max-w-full rounded-full bg-primary border-8 border-blue-600"
-                                />
+                            <div className="flex justify-center items-center ">
+                                <PhotoProvider>
+                                    <PhotoView src={sofi3}>
+                                        <img
+                                            src={sofi1}
+                                            alt="Sofiuzzaman-Sofi" title="Click to View Full Screen"
+                                            // className="max-h-80 max-w-full rounded-full bg-primary hover:bg-white dark:hover:bg-black border-8 border-blue-600"
+                                            className="max-h-80 max-w-full rounded-full bg-primary border-8 border-blue-600 cursor-pointer"
+                                        />
+                                    </PhotoView>
+                                </PhotoProvider>
                             </div>
                         </div>
                     </div>
@@ -26,13 +32,13 @@ const AboutMe = () => {
                         <div>
                             <h1 className="text-3xl font-bold uppercase">Md Sofiuzzaman Sofi</h1>
                             <h3 className="capitalize text-md text-primary">Front-end Web Developer || MERN-Stack Web Developer || Full-Stack Web Developer</h3>
-                            <p className="my-3">
+                            <p className="my-3 text-justify">
                                 I'm a Mern Stack Web Developer focused on developing Javascript
                                 based web applications. I love to manage everything from complex
                                 logic to the awesome layout of a web application.
                             </p>
 
-                            <p className="mb-2">
+                            <p className="mb-2 text-justify">
                                 I have a lot of interest in New Things. I Think Life is valueless if there is no new things. Thats why I love to take new challenges everyday. I follow "never give up" slogan on handling errors or problems.
                             </p>
                         </div>

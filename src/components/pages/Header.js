@@ -53,8 +53,7 @@ const Header = () => {
 
                 {/* choto (mobile) devices jonno--------- */}
                 <nav
-                    className={` md:hidden text-base w-full md:w-2/5 bg-slate-300 dark:bg-slate-900 h-full top-0 right-0 z-10 flex-col flex items-center justify-center  gap-5 fixed ${showNav ? "translate-x-0" : "translate-x-full"
-                        } duration-300 transition-all`}
+                    className={` md:hidden text-base w-full md:w-2/5 bg-slate-300 dark:bg-slate-900 h-full top-0 right-0 z-10 flex-col flex items-center justify-center  gap-5 fixed ${showNav ? "translate-x-0" : "translate-x-full"} duration-300 transition-all`}
                 >
                     <button
                         className="absolute top-10 left-10"

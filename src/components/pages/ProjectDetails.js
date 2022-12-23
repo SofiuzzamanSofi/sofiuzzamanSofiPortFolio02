@@ -1,4 +1,5 @@
 import React from "react";
+import { PhotoProvider, PhotoView } from "react-photo-view";
 import { useLocation } from "react-router-dom";
 
 
@@ -12,10 +13,14 @@ const ProjectDetails = () => {
     return (
         <section>
             <div className="container">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
-                    <div className="lg:col-span-1 w-full">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 cursor-pointer" title="Click to View Full Screen">
+                    <div className="lg:col-span-1 w-full ">
                         {state.detailsImage?.map((img, index) => <div key={index}>
-                            <img src={img ? img : ""} alt={state.title} />
+                            <PhotoProvider>
+                                <PhotoView src={img ? img : ""} >
+                                    <img src={img ? img : ""} alt={state.title} />
+                                </PhotoView>
+                            </PhotoProvider>
                         </div>)}
                     </div>
 
