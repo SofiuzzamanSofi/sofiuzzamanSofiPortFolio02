@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaWhatsappSquare, FaFacebookSquare, FaYoutube, FaTwitterSquare, FaInstagramSquare, FaLinkedin, FaSnapchatSquare } from 'react-icons/fa';
 import cover from "../assets/cover.png";
-import footerLogo from "../assets/footerLogo.JPG";
+import { IoMdMail } from "react-icons/io";
 
 const Footer = () => {
     return (
@@ -17,6 +17,9 @@ const Footer = () => {
                     <span className="footer-title">Social</span>
                     <div className="grid grid-flow-col gap-4">
 
+                        <a target="_blank" rel="noreferrer" href="https://mail.google.com/mail/u/0/#drafts?compose=DmwnWsdLRzWqgqNpggrKwzbMDgsNptHbkDMTMgzpNgMBsMjKqtDNdWbSDJLwFmlWnXlLCKDRVXDL" className='text-black'>
+                            <IoMdMail className='h-6 w-6' />
+                        </a>
                         <a target="_blank" rel="noreferrer" href="https://www.facebook.com/sofiuzzaman.sofii">
                             <FaFacebookSquare className='h-6 w-6' />
                         </a>

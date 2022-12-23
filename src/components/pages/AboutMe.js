@@ -1,5 +1,6 @@
 import React from "react";
 import { FaWhatsappSquare, FaFacebookSquare, FaYoutube, FaTwitterSquare, FaInstagramSquare, FaLinkedin, FaSnapchatSquare } from 'react-icons/fa';
+import { IoMdMail } from "react-icons/io";
 import { PhotoProvider, PhotoView } from "react-photo-view";
 import sofi1 from "../assets/sofi1.png";
 import sofi3 from "../assets/sofi3.jpg";
@@ -48,6 +49,9 @@ const AboutMe = () => {
                         <div className="flex items-center gap-5 my-5">
                             <div className="grid grid-flow-col gap-4">
 
+                                <a target="_blank" rel="noreferrer" href="https://mail.google.com/mail/u/0/#drafts?compose=DmwnWsdLRzWqgqNpggrKwzbMDgsNptHbkDMTMgzpNgMBsMjKqtDNdWbSDJLwFmlWnXlLCKDRVXDL" className='text-black'>
+                                    <IoMdMail className='h-6 w-6' />
+                                </a>
                                 <a target="_blank" rel="noreferrer" href="https://www.facebook.com/sofiuzzaman.sofii">
                                     <FaFacebookSquare className='h-6 w-6' />
                                 </a>
