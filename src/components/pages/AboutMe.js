@@ -1,9 +1,8 @@
 import React from "react";
-import { FaWhatsappSquare, FaFacebookSquare, FaYoutube, FaTwitterSquare, FaInstagramSquare, FaLinkedin, FaSnapchatSquare } from 'react-icons/fa';
-import { IoMdMail } from "react-icons/io";
 import { PhotoProvider, PhotoView } from "react-photo-view";
 import sofi1 from "../assets/sofi1.png";
 import sofi3 from "../assets/sofi3.jpg";
+import ContactIcon from "../common/ContactIcon";
 
 
 
@@ -47,34 +46,23 @@ const AboutMe = () => {
                             <p className="text-md text-primary pt-5">Contact Platform---</p>
                         </div>
                         <div className="flex items-center gap-5 my-5">
-                            <div className="grid grid-flow-col gap-4">
 
-                                <a target="_blank" rel="noreferrer" href="https://mail.google.com/mail/u/0/#drafts?compose=DmwnWsdLRzWqgqNpggrKwzbMDgsNptHbkDMTMgzpNgMBsMjKqtDNdWbSDJLwFmlWnXlLCKDRVXDL">
-                                    <IoMdMail className='h-6 w-6' />
-                                </a>
-                                <a target="_blank" rel="noreferrer" href="https://www.facebook.com/sofiuzzaman.sofii">
-                                    <FaFacebookSquare className='h-6 w-6' />
-                                </a>
-                                <a target="_blank" rel="noreferrer" href="https://www.youtube.com/channel/UC3L33hwCwqlV6Zsp_eadMXg">
-                                    <FaYoutube className='h-6 w-6' />
-                                </a>
-                                <a target="_blank" rel="noreferrer" href="https://twitter.com/sofiuzzaman_Sof">
-                                    <FaTwitterSquare className='h-6 w-6' />
-                                </a>
-                                <a target="_blank" rel="noreferrer" href="https://www.instagram.com/ssofiuzzamansofi">
-                                    <FaInstagramSquare className='h-6 w-6' />
-                                </a>
-                                <a target="_blank" rel="noreferrer" href="https://www.snapchat.com/add/sofiuzzamansofi?share_id=YU0N72t95Ps&locale=en-US">
-                                    <FaSnapchatSquare className='h-6 w-6' />
-                                </a>
-                                <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/sofiuzzaman-sf">
-                                    <FaLinkedin className='h-6 w-6' />
-                                </a>
-                                <a target="_blank" rel="noreferrer" href="tel:+8801747216227">
-                                    <FaWhatsappSquare className='h-6 w-6' />
-                                </a>
-                            </div>
+
+                            {/* contact icon import from common components--- */}
+                            <ContactIcon />
                         </div>
+
+
+                        {/* google map ----- */}
+                        <div>
+                            <iframe title="this is a google map"
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d41298.61929588698!2d90.35705957154302!3d23.807334082767614!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c0d6f6b8c2ff%3A0x3b138861ee9c8c30!2sMirpur%2010%20Roundabout%2C%20Dhaka%201216!5e0!3m2!1sen!2sbd!4v1672062657158!5m2!1sen!2sbd"
+                                allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"
+                                className="w-full h-full border-8 border-blue-600"
+                            >
+                            </iframe>
+                        </div>
+
                     </div>
                 </div>
             </div>
