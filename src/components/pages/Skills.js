@@ -2,6 +2,8 @@ import React from 'react';
 import contactMe from "../assets/contactMe.gif";
 
 
+
+
 const Skills = () => {
 
     const skills = [
@@ -20,8 +22,6 @@ const Skills = () => {
         "next js (familiar)",
         "typescript (familiar)",
     ];
-
-
 
 
 

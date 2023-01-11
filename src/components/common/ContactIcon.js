@@ -2,7 +2,12 @@ import React from 'react';
 import { FaWhatsappSquare, FaFacebookSquare, FaYoutube, FaTwitterSquare, FaInstagramSquare, FaLinkedin, FaSnapchatSquare } from 'react-icons/fa';
 import { IoMdMail } from "react-icons/io";
 
+
+
+
 const ContactIcon = () => {
+
+
     return (
         <div className="grid grid-flow-col gap-4">
             <a target="_blank" rel="noreferrer" href="mailto:sofiuzzaman.sf@gmail.com">

@@ -7,13 +7,13 @@ import Skills from './Skills';
 
 const Home = () => {
     return (
-        <div className=''>
+        <>
             <Intro />
             <Skills />
             <Projects />
             <AboutMe />
             <ContactMe />
-        </div>
+        </>
     );
 };
 

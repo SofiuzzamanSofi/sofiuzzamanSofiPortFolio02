@@ -7,6 +7,7 @@ import { useLocation } from "react-router-dom";
 
 
 const ProjectDetails = () => {
+
     const { state } = useLocation();
 
 
@@ -27,6 +28,10 @@ const ProjectDetails = () => {
                     <div className="lg:col-span-1 w-full">
                         <div className="flex items-center justify-between">
                             <h1 className="text-3xl font-bold">{state.title}</h1>
+
+
+
+                            {/* this could be edited next time -- */}
                             <p className="text-sm">({state?.startTime} - {state?.endTime})/2022</p>
                         </div>
                         <p className="my-3">{state.description}</p>

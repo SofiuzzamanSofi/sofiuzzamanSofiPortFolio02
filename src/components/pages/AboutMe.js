@@ -6,6 +6,8 @@ import ContactIcon from "../common/ContactIcon";
 
 
 
+
+
 const AboutMe = () => {
 
     return (
@@ -53,7 +55,7 @@ const AboutMe = () => {
                         </div>
 
 
-                        {/* google map ----- */}
+                        {/* google mappppppppppppp ----- */}
                         <div>
                             <iframe title="this is a google map"
                                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d41298.61929588698!2d90.35705957154302!3d23.807334082767614!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c0d6f6b8c2ff%3A0x3b138861ee9c8c30!2sMirpur%2010%20Roundabout%2C%20Dhaka%201216!5e0!3m2!1sen!2sbd!4v1672062657158!5m2!1sen!2sbd"
