@@ -30,7 +30,7 @@ const Skills = () => {
             <div className="container">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
                     <div className="lg:col-span-1 w-full">
-                        <div className="overflow-hidden border-8 border-primary ">
+                        <div className="overflow-hidden rounded-md md:rounded-none md:border-8 border-primary ">
                             <img
                                 src={contactMe}
                                 alt="arif"
